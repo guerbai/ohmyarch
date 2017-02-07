@@ -1,0 +1,42 @@
+set guifont=Andale_Mono:h12,Menlo:h12,Consolas:h12,Courier_New:h12
+
+",ss使用vimrc; ,ee编辑vimrc; 修改vimrc后自动重载.
+map <silent> <leader>se :source ~/.vimrc.local<cr>
+map <silent> <leader>ee :vs ~/.vimrc.local<cr>
+"不管用.
+"autocmd! bufwritepost .vimrc source ~/.vimrc
+
+"代码按indent折叠; 通过za实现; 可映射到其他按键.
+"正确折叠插件：'tehedberg/SimpylFold'
+set foldmethod=indent
+set foldlevel=99
+"nnormap <what you like> za
+
+"多余空格高亮显示.
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match Error /\s\+$/
+"or
+"hi BadWhitespace guifg=gray guibg=red ctermfg=gray ctermbg=red
+"au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+"关于主题; 一个主题可认为是一个插件.
+"colorscheme <colorscheme>
+"Plug 'youchu/accelerated-smooth-scroll'
+
+
+"只剩下NERDTree时自动关闭.
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+"忽略*.pyc和*~
+let NERDTreeIgnore=['\.pyc$', '\~$']
+
+"更改Vim自动更新时间,无明显作用.
+"set updatetime=250
+
+"打开tabline功能,方便查看Buffer和切换，这个功能比较不错"
+"我还省去了minibufexpl插件，因为我习惯在1个Tab下用多个buffer"
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+
+"设置切换Buffer快捷键"
+nnoremap <C-N> :bn<CR>
+nnoremap <C-P> :bp<CR>
+
