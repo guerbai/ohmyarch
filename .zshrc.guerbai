@@ -1,0 +1,24 @@
+
+alias sa="source activate"
+alias sd="source deactivate"
+alias .="~"
+alias jp="~/jump.sh"
+alias gupdev="git checkout develop && git pull origin develop && git checkout -"
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+
+# redis-server
+result=`ps aux | grep 6379 | grep redis-server`
+if [[ "$result" == "" ]]
+then 
+    redis-server &
+fi
+
+# tomcat-server
+result1=`ps aux | grep tomcat | grep /Library/Java/JavaVirtualMachines`
+if [[ "$result1" == "" ]]
+then 
+    /usr/local/Cellar/tomcat/bin/startup.sh
+fi
+
+[[ -s /Users/cuishunhua/.autojump/etc/profile.d/autojump.sh  ]] && source /Users/cuishunhua/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit -u
