@@ -1,14 +1,13 @@
 config_picom() {
     if check_file_exist "picom-config"; then
-        echo "${YELLOW}already has wallpapers installed, skip it${RESET}"
+        echo "${YELLOW}already has picom configed, skip it${RESET}"
 	return
     fi
 
     mkdir -p ~/.config/picom
     cd ~/.config/picom
     echo "opacity-rule = [
-\"90:class_g = 'st-256color'\",
-\"90:class_g = 'Alacritty'\"
+\"90:class_g = 'st-256color'\"
 ];
 
 wintypes:

@@ -7,7 +7,7 @@ install_ohmyzsh () {
 	rm -rf ~/.oh-my-zsh
         # sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
         # sh -c "$(wget -O- https://gitee.com/jklash1996/ohmyzsh/raw/master/tools/install.sh)"
-	cd ~/MyConfig/arch/static
+	cd ~/MyConfig/static
 	chmod a+x ohmyzsh-install.sh
 	exit | ./ohmyzsh-install.sh
     fi
@@ -18,9 +18,13 @@ install_ohmyzsh () {
     fi
 
     echo "${GREEN}manually install zsh-autosuggestions start${RESET}"
-    cd ~/.oh-my-zsh/custom/plugins
-    git clone https://github.com/zsh-users/zsh-autosuggestions
-    cd ~
-    sed 's/plugins\=(git)/plugins\=(git zsh-autosuggestions vi-mode)/' .zshrc > temp && mv temp .zshrc
+    if [ -d "$HOME/.oh-my-zsh/custom/plugins"  ]; then
+        cd ~/.oh-my-zsh/custom/plugins
+        git clone https://github.com/zsh-users/zsh-autosuggestions
+        cd ~
+        sed 's/plugins\=(git)/plugins\=(git zsh-autosuggestions vi-mode)/' .zshrc > temp && mv temp .zshrc
+    else
+        echo "${YELLOW}install ohmyzsh failed, skip zsh-autosuggestions${RESET}"
+    fi
     # echo "${BLUE}config zsh plugins success${RESET}"
 }

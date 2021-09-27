@@ -13,7 +13,6 @@ CHECK_FILES=(
     ["autojump"]="$HOME/.autojump/etc/profile.d/autojump.sh"
     ["nvim"]="/usr/bin/nvim"
     ["ag"]="/usr/bin/ag"
-    ["rg"]="/usr/bin/rg"
     ["pulseaudio"]="/usr/bin/pulseaudio"
     ["wget"]="/usr/bin/wget"
     ["curl"]="/usr/bin/curl"

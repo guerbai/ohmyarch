@@ -2,7 +2,6 @@ install_dependency () {
     yes | sudo pacman -Syu
     tools=(
         "git"
-        "vim"
         "curl"
         "make"
         "gcc"
@@ -13,6 +12,7 @@ install_dependency () {
         "feh"
         "unzip"
         "wget"
+        "scrot"
         "pulseaudio"
         "ranger"
 	"yay"
@@ -33,31 +33,20 @@ install_dependency () {
 
     yes | yay -S nerd-fonts-hack
     echo "${GREEN}yay install nerd-fonts-hack success${RESET}"
-    # git clone https://aur.archlinux.org/nerd-fonts-hack.git
-    # cd nerd-fonts-hack
-    # makepkg -si
-
-    # yes | yay -S alacritty-git
-    # echo "${GREEN}yay install alacritty success${RESET}"
-    # WHICH_ALACRITTY=$(which alacritty)
-    # if [[ $WHICH_ALACRITTY == *"not found"* ]]; then
-    #     cd ~/Downloads
-    #     git clone https://aur.archlinux.org/alacritty-git.git
-    #     cd alacritty-git
-    #     makepkg -si
-    # fi
-
     yes | yay -S ripgrep
     echo "${GREEN}yay install ripgrep success${RESET}"
     yes | yay -S neovim
     echo "${GREEN}yay install neovim success${RESET}"
     yay -S --answerclean I --answerdiff N fcitx-sogoupinyin
     echo "${GREEN}yay install fcitx-sogoupinyin success${RESET}"
-    # yes | yay -S brave
-    # echo "${GREEN}yay install brave success${RESET}"
 
     cd ~/Downloads
     wget --output-document ag.pkg.tar.zst https://archlinux.org/packages/community/x86_64/the_silver_searcher/download
     sudo pacman -U --noconfirm ag.pkg.tar.zst
     echo "${GREEN}manually install ag success${RESET}"
+
+    # yes | yay -S alacritty-git
+    # echo "${GREEN}yay install alacritty success${RESET}"
+    # yes | yay -S brave
+    # echo "${GREEN}yay install brave success${RESET}"
 }
