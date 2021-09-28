@@ -48,6 +48,6 @@ Server = https://gitlab.com/dwt1/\$repo/-/raw/master/\$arch" | sudo tee -a /etc/
         echo "fcitx &
 xrandr -s 1920x1080
 feh --bg-scale ~/Pictures/wallpapers/0002.jpg" | sudo tee -a /opt/dwm-distrotube-git/autostart.sh
+        echo "${BLUE}add commands to dwm autostart.sh success${RESET}"
     fi
-    echo "${BLUE}add commands to dwm autostart.sh success${RESET}"
 }

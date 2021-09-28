@@ -12,6 +12,7 @@ install_dependency () {
         "feh"
         "unzip"
         "wget"
+	"zsh"
         "scrot"
         "pulseaudio"
         "ranger"
@@ -22,7 +23,7 @@ install_dependency () {
 	"fcitx-configtool"
     )
     for tool in ${tools[@]}; do
-	sudo pacman -S --noconfirm $tool
+	sudo pacman -S --needed --noconfirm $tool
         echo "${GREEN}pacman install $tool success${RESET}"
     done
     xrandr -s 1920x1080

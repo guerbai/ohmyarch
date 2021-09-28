@@ -89,10 +89,13 @@ DWM基本生存指南见[DWM](https://gitlab.com/dwt1/dwm-distrotube)
 | 发行版        | 测试情况                                                     |
 | ------------- | ------------------------------------------------------------ |
 | Manjaro XFCE  | 一切正常                                                     |
+| Garuda KDE    | 基本正常，中文输入法仅在firedragon可用                       |
 | Manjaro Gnome | base-devel无法安装，有`pacman-contrib`的依赖不兼容问题       |
 | Archcraft     | 无法调节分辨率为1920x1080                                    |
 | Endeavour os  | 一直提示连不上网，而浏览器可以上baidu和google                |
 | Artix         | 无法正常安装中文输入法，target not found，此发行版需要特殊的源配置 |
+| Archcraft     | 不支持1920x1080                                              |
+| Chakra        | 不支持1920x1080                                              |
 
 ## 鸣谢
 
