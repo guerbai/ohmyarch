@@ -26,6 +26,7 @@ install_v2ray_core() {
 }
 
 align_time() {
+    sudo timedatectl set-timezone Asia/Shanghai
     sudo ntpdate pool.ntp.org
 }
 

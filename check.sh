@@ -3,10 +3,6 @@ CHECK_FILES=(
     ["yay"]="/usr/bin/yay"
     ["picom"]="/usr/bin/picom"
     ["picom-config"]="$HOME/.config/picom/picom.conf"
-    ["dmenu"]="/usr/local/bin/dmenu"
-    ["dwm"]="/usr/local/bin/dwm"
-    ["dwmblocks"]="/usr/bin/dwmblocks"
-    ["st"]="/usr/bin/st"
     ["ohmyzsh"]="$HOME/.oh-my-zsh/oh-my-zsh.sh"
     ["fcitx"]="/usr/bin/fcitx"
     ["fcitx-configtool"]="/usr/bin/fcitx-configtool"
@@ -17,6 +13,10 @@ CHECK_FILES=(
     ["wget"]="/usr/bin/wget"
     ["curl"]="/usr/bin/curl"
     ["firefox"]="/usr/bin/firefox"
+    # ["dmenu"]="/usr/local/bin/dmenu"
+    # ["dwm"]="/usr/local/bin/dwm"
+    # ["dwmblocks"]="/usr/bin/dwmblocks"
+    # ["st"]="/usr/bin/st"
 )
 
 declare -A CHECK_DIRS
@@ -24,6 +24,10 @@ CHECK_DIRS=(
     ["v2ray-core"]="$HOME/.config/qv2ray/vcore"
     ["wallpapers"]="$HOME/Pictures/wallpapers"
     ["zsh-autosuggestions"]="$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
+    ["dmenu"]="/opt/dmenu-distrotube-git"
+    ["dwm"]="/opt/dwm-distrotube-git"
+    ["dwmblocks"]="/opt/dwmblocks-distrotube-git"
+    ["st"]="/opt/st-distrotube-git"
 )
 
 function check_file_exist {
