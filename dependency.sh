@@ -27,7 +27,7 @@ install_dependency () {
     done
     xrandr -s 1920x1080
 
-    cd ~/MyConfig/arch/static
+    cd ~/MyConfig/static
     # wget --output-document ttf-joypixels.pkg.tar.zst https://archlinux.org/packages/community/any/ttf-joypixels/download
     sudo pacman -U --noconfirm ttf-joypixels-6.6.0-1-any.pkg.tar.zst
     echo "${GREEN}manually install ttf-joypixels success${RESET}"
@@ -41,6 +41,7 @@ install_dependency () {
     yay -S --answerclean I --answerdiff N fcitx-sogoupinyin
     echo "${GREEN}yay install fcitx-sogoupinyin success${RESET}"
 
+    mkdir -p ~/Downloads
     cd ~/Downloads
     wget --output-document ag.pkg.tar.zst https://archlinux.org/packages/community/x86_64/the_silver_searcher/download
     sudo pacman -U --noconfirm ag.pkg.tar.zst

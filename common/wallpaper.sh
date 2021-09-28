@@ -1,4 +1,5 @@
 install_wallpaper () {
+    mkdir -p ~/Pictures
     cd ~/Pictures
     if check_dir_exist "wallpapers"; then
         echo "${YELLOW}already has wallpapers installed, skip it${RESET}"

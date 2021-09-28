@@ -45,7 +45,6 @@ suckless的软件及壁纸来自[DistroTube](https://gitlab.com/dwt1)
 **前置依赖**
 
 - 带图形界面的Arch Linux发行版(建议选择[Manjaro XFCE](https://manjaro.org/download/))
-- `~/Downloads`及`~/Pictures`目录必须存在
 - 安装好git
 
 **运行脚本**
