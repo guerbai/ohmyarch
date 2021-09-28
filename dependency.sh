@@ -16,6 +16,7 @@ install_dependency () {
         "pulseaudio"
         "ranger"
 	"yay"
+	"neofetch"
 	"firefox"
 	"fcitx-im"
 	"fcitx-configtool"

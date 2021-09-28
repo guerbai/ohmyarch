@@ -26,5 +26,10 @@ install_ohmyzsh () {
     else
         echo "${YELLOW}install ohmyzsh failed, skip zsh-autosuggestions${RESET}"
     fi
+
+    ZSHRC_CONTENT=$(cat ~/.zshrc)
+    if [[ $ZSHRC_CONTENT != *"neofetch"* ]]; then
+        echo "neofetch" | tee -a ~/.zshrc
+    fi
     # echo "${BLUE}config zsh plugins success${RESET}"
 }

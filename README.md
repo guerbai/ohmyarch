@@ -28,6 +28,7 @@
 | autojump                | 快速目录跳转                   |
 | ohmyzsh                 | 华丽的zsh配置                  |
 | zsh-autosuggestions     | zsh命令补全                    |
+| neofetch                | 终端显示发行版与系统信息       |
 
 suckless的软件及壁纸来自[DistroTube](https://gitlab.com/dwt1)
 
