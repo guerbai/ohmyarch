@@ -24,11 +24,15 @@
 | nerd-fonts-hack         | 显示emoji，unicode等字符       |
 | unzip                   | 解压缩工具                     |
 | ag/rg                   | 模糊搜索工具                   |
-| neovim                  | 编辑器                         |
+| neovim                  | 代码编辑器                     |
 | autojump                | 快速目录跳转                   |
 | ohmyzsh                 | 华丽的zsh配置                  |
 | zsh-autosuggestions     | zsh命令补全                    |
 | neofetch                | 终端显示发行版与系统信息       |
+| screenkey               | 按键操作可视化                 |
+| tldr                    | 快捷命令行工具使用提示         |
+| glances                 | 查看系统运行情况               |
+| typora                  | markdown编辑器                 |
 
 suckless的软件及壁纸来自[DistroTube](https://gitlab.com/dwt1)
 

@@ -18,6 +18,8 @@ install_dependency () {
         "ranger"
 	"yay"
 	"neofetch"
+	"python-pip"
+	"screenkey"
 	"firefox"
 	"fcitx-im"
 	"fcitx-configtool"
@@ -41,12 +43,17 @@ install_dependency () {
     echo "${GREEN}yay install neovim success${RESET}"
     yay -S --answerclean I --answerdiff N fcitx-sogoupinyin
     echo "${GREEN}yay install fcitx-sogoupinyin success${RESET}"
+    yes | yay -S typora
+    echo "${GREEN}yay install typora success${RESET}"
 
     mkdir -p ~/Downloads
     cd ~/Downloads
     wget --output-document ag.pkg.tar.zst https://archlinux.org/packages/community/x86_64/the_silver_searcher/download
     sudo pacman -U --noconfirm ag.pkg.tar.zst
     echo "${GREEN}manually install ag success${RESET}"
+
+    pip install tldr
+    pip install glances
 
     # yes | yay -S alacritty-git
     # echo "${GREEN}yay install alacritty success${RESET}"
