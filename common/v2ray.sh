@@ -8,7 +8,7 @@ install_qv2ray() {
 	# echo "Already has qv2ray, skip install_qv2ray"
     # fi
 
-    cd ~/MyConfig/static
+    cd ~/ohmyarch/static
     chmod a+x ./Qv2ray-v2.7.0-linux-x64.AppImage
     ./Qv2ray-v2.7.0-linux-x64.AppImage &
 }
@@ -17,7 +17,7 @@ install_v2ray_core() {
     # cd ~/Downloads
     # wget https://github.com/v2fly/v2ray-core/releases/download/v4.42.2/v2ray-linux-64.zip 
 
-    cd ~/MyConfig/static
+    cd ~/ohmyarch/static
     mkdir -p ~/Downloads
     unzip v2ray-linux-64.zip -d ~/Downloads/vcore
     mkdir -p ~/.config/qv2ray/vcore

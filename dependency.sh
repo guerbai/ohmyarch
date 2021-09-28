@@ -27,7 +27,7 @@ install_dependency () {
     done
     xrandr -s 1920x1080
 
-    cd ~/MyConfig/static
+    cd ~/ohmyarch/static
     # wget --output-document ttf-joypixels.pkg.tar.zst https://archlinux.org/packages/community/any/ttf-joypixels/download
     sudo pacman -U --noconfirm ttf-joypixels-6.6.0-1-any.pkg.tar.zst
     echo "${GREEN}manually install ttf-joypixels success${RESET}"

@@ -7,7 +7,7 @@ install_ohmyzsh () {
 	rm -rf ~/.oh-my-zsh
         # sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
         # sh -c "$(wget -O- https://gitee.com/jklash1996/ohmyzsh/raw/master/tools/install.sh)"
-	cd ~/MyConfig/static
+	cd ~/ohmyarch/static
 	chmod a+x ohmyzsh-install.sh
 	exit | ./ohmyzsh-install.sh
     fi
