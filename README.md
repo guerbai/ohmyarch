@@ -13,9 +13,10 @@
 | 软件名                  | 介绍                           |
 | :---------------------- | ------------------------------ |
 | git                     | 内容版本管理                   |
-| xorg                    | 使用其中的xrandr调整屏幕分辨率 |
+| xrandr                  | 使用其中的xrandr调整屏幕分辨率 |
 | picom                   | 软件透明化(见效果图)           |
-| feh                     | 设置壁纸                       |
+| sxiv                    | 查看图片                       |
+| xwallpaper              | 设置壁纸                       |
 | scrot                   | 截图工具                       |
 | pulseaudio              | 音量调节                       |
 | ranger                  | 文件管理                       |
@@ -23,7 +24,7 @@
 | fcitx/fcitx-sogoupinyin | 中文输入法                     |
 | nerd-fonts-hack         | 显示emoji，unicode等字符       |
 | unzip                   | 解压缩工具                     |
-| ag/rg                   | 模糊搜索工具                   |
+| rg                      | 模糊搜索工具                   |
 | neovim                  | 代码编辑器                     |
 | autojump                | 快速目录跳转                   |
 | ohmyzsh                 | 华丽的zsh配置                  |
@@ -92,6 +93,7 @@ DWM基本生存指南见[DWM](https://gitlab.com/dwt1/dwm-distrotube)
 
 | 发行版        | 测试情况                                                     |
 | ------------- | ------------------------------------------------------------ |
+| Arch Linux    | 一切正常                                                     |
 | Manjaro XFCE  | 一切正常                                                     |
 | Garuda KDE    | 一切正常                                                     |
 | Endeavour os  | 一切正常                                                     |

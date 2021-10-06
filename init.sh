@@ -26,23 +26,20 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/\$arch" | sudo tee -a 
 DIR=$(pwd)
 . "$DIR/dependency.sh"
 . "$DIR/common/wallpaper.sh"
-. "$DIR/common/picom.sh"
 . "$DIR/suckless-distrotube.sh"
+. "$DIR/common/localbin.sh"
 . "$DIR/common/v2ray.sh"
 . "$DIR/common/autojump.sh"
 . "$DIR/common/ohmyzsh.sh"
+. "$DIR/config/config.sh"
 . "$DIR/check.sh"
 
 if [[ $1 == "check" ]]; then
     check_all
-elif [[ $1 == "config_arch_cn" ]]; then
-    config_arch_cn
 elif [[ $1 == "depencency" ]]; then
     install_dependency
 elif [[ $1 == "wallpaper" ]]; then
     install_wallpaper
-elif [[ $1 == "config_picom" ]]; then
-    config_picom
 elif [[ $1 == "suckless" ]]; then
     install_suckless_distrotube
 elif [[ $1 == "ohmyzsh" ]]; then
@@ -53,11 +50,12 @@ else
     config_arch_cn
     install_dependency
     install_wallpaper
-    config_picom
     install_suckless_distrotube
     install_v2ray
     install_ohmyzsh
     install_autojump
+    init_localbin
+    init_config
     check_all
 fi
 

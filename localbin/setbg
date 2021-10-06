@@ -1,0 +1,1 @@
+sxiv -r -q -t -o $HOME/Pictures/wallpapers/* | xargs xwallpaper --zoom

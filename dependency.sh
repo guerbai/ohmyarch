@@ -1,26 +1,30 @@
 install_dependency () {
     yes | sudo pacman -Syu
     tools=(
+        "base-devel"
         "git"
         "curl"
-        "make"
-        "gcc"
         "pkg-config"
         "xorg"
-        "base-devel"
-        "picom"
-        "feh"
+        "xorg-xinit"
+	"alsa-utils"
+	"ntp"
+	"fuse2"
         "unzip"
         "wget"
-	"zsh"
+        "xwallpaper"
+        "picom"
         "scrot"
+	"zsh"
         "pulseaudio"
         "ranger"
 	"yay"
 	"neofetch"
+	"sxiv"
 	"python-pip"
 	"screenkey"
 	"firefox"
+	"wqy-zenhei"
 	"fcitx-im"
 	"fcitx-configtool"
     )
@@ -46,14 +50,14 @@ install_dependency () {
     yes | yay -S typora
     echo "${GREEN}yay install typora success${RESET}"
 
-    mkdir -p ~/Downloads
-    cd ~/Downloads
-    wget --output-document ag.pkg.tar.zst https://archlinux.org/packages/community/x86_64/the_silver_searcher/download
-    sudo pacman -U --noconfirm ag.pkg.tar.zst
-    echo "${GREEN}manually install ag success${RESET}"
-
     pip install tldr
     pip install glances
+
+    # mkdir -p ~/Downloads
+    # cd ~/Downloads
+    # wget --output-document ag.pkg.tar.zst https://archlinux.org/packages/community/x86_64/the_silver_searcher/download
+    # sudo pacman -U --noconfirm ag.pkg.tar.zst
+    # echo "${GREEN}manually install ag success${RESET}"
 
     # yes | yay -S alacritty-git
     # echo "${GREEN}yay install alacritty success${RESET}"
