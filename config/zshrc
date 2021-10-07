@@ -1,0 +1,10 @@
+# autojump
+[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] &&  source ~/.autojump/etc/profile.d/autojump.sh
+    autoload -U compinit && compinit -u
+
+export PATH="$HOME/.local/bin:$PATH"
+
+neofetch
+
+alias vim=nvim
+alias la='ls -a'

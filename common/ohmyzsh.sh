@@ -3,7 +3,6 @@ install_ohmyzsh () {
     if check_file_exist "ohmyzsh"; then
         echo "${YELLOW}already has ohmyzsh installed, skip it${RESET}"
     else
-	echo "${GREEN}manually install ohmyzsh start${RESET}"
 	rm -rf ~/.oh-my-zsh
         # sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
         # sh -c "$(wget -O- https://gitee.com/jklash1996/ohmyzsh/raw/master/tools/install.sh)"
@@ -26,10 +25,4 @@ install_ohmyzsh () {
     else
         echo "${YELLOW}install ohmyzsh failed, skip zsh-autosuggestions${RESET}"
     fi
-
-    ZSHRC_CONTENT=$(cat ~/.zshrc)
-    if [[ $ZSHRC_CONTENT != *"neofetch"* ]]; then
-        echo "neofetch" | tee -a ~/.zshrc
-    fi
-    # echo "${BLUE}config zsh plugins success${RESET}"
 }

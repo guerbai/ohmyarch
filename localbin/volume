@@ -1,0 +1,9 @@
+choices="inc\ndec\nmute"
+
+chosen=$(echo -e "$choices" | dmenu -i -p "Operation:")
+
+case "$chosen" in
+    inc) pactl set-sink-volume 0 +20%;;
+    dec) pactl set-sink-volume 0 -20%;;
+    mute) pactl set-sink-mute 0 toggle;;
+esac

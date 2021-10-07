@@ -1,0 +1,11 @@
+mkdir -p $HOME/Pictures/ScreenShot
+
+choices="quick_full\ndelay_full\nsection"
+
+chosen=$(echo -e "$choices" | dmenu -i -p "ScreenShot Type:")
+
+case "$chosen" in
+    quick_full) scrot -d 1 $HOME/Pictures/ScreenShot/%Y-%m-%d-%H-%M-%S-scrot.png;;
+    delay_full) scrot -d 5 $HOME/Pictures/ScreenShot/%Y-%m-%d-%H-%M-%S-scrot.png;;
+    section) scrot -s $HOME/Pictures/ScreenShot/%Y-%m-%d-%H-%M-%S-scrot.png;;
+esac

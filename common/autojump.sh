@@ -11,7 +11,4 @@ install_autojump () {
     git clone git://github.com/wting/autojump.git
     cd autojump
     ./install.py
-    echo "[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] &&  source ~/.autojump/etc/profile.d/autojump.sh
-    autoload -U compinit && compinit -u
-    " >> ~/.zshrc
 }
