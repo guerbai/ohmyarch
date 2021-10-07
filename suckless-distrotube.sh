@@ -43,11 +43,4 @@ Server = https://gitlab.com/dwt1/\$repo/-/raw/master/\$arch" | sudo tee -a /etc/
         sudo make clean install
         echo "${GREEN}pacman install st-distrotube${RESET}"
     fi
-    DWM_AUTOSTART=$(cat /opt/dwm-distrotube-git/autostart.sh)
-    if [[ $DWM_AUTOSTART != *"Pictures"* ]]; then
-        echo "fcitx &
-xrandr -s 1920x1080
-xwallpaper --zoom ~/Pictures/wallpapers/0002.jpg" | sudo tee -a /opt/dwm-distrotube-git/autostart.sh
-        echo "${BLUE}add commands to dwm autostart.sh success${RESET}"
-    fi
 }

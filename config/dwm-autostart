@@ -1,0 +1,4 @@
+fcitx &
+clipmenud &
+xrandr -s 1920x1080
+xwallpaper --zoom ~/Pictures/wallpapers/0002.jpg
