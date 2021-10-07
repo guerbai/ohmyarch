@@ -1,0 +1,4 @@
+#!/bin/bash
+
+vol="$(pactl get-sink-volume 0 | head -n1 | sed -r 's/.*\/  (.*?)% \/.*/\1/')"
+echo "${vol}% volume "

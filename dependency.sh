@@ -21,6 +21,7 @@ install_dependency () {
 	"yay"
 	"neofetch"
 	"sxiv"
+	"clipmenu"
 	"python-pip"
 	"screenkey"
 	"firefox"

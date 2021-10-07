@@ -29,6 +29,7 @@
 | autojump                | 快速目录跳转                   |
 | ohmyzsh                 | 华丽的zsh配置                  |
 | zsh-autosuggestions     | zsh命令补全                    |
+| clipmenu                | 剪贴板历史                     |
 | neofetch                | 终端显示发行版与系统信息       |
 | screenkey               | 按键操作可视化                 |
 | tldr                    | 快捷命令行工具使用提示         |

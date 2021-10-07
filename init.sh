@@ -27,7 +27,7 @@ DIR=$(pwd)
 . "$DIR/dependency.sh"
 . "$DIR/common/wallpaper.sh"
 . "$DIR/suckless-distrotube.sh"
-. "$DIR/common/localbin.sh"
+. "$DIR/scripts/dispatch.sh"
 . "$DIR/common/v2ray.sh"
 . "$DIR/common/autojump.sh"
 . "$DIR/common/ohmyzsh.sh"
@@ -54,7 +54,7 @@ else
     install_v2ray
     install_ohmyzsh
     install_autojump
-    init_localbin
+    dispatch_scripts
     init_config
     check_all
 fi
