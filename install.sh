@@ -29,10 +29,10 @@ hwclock --systohc
 sudo sed 's/#en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen | sudo tee -a temp && sudo mv temp /etc/locale.gen
 locale-gen
 # host
-echo "archlinux" > /etc/hostname
-echo "127.0.0.1	localhost
-::1		       localhost
-127.0.1.1	archvbox.localdomain	archvbox" | tee -a /etc/hosts
+echo "arch" > /etc/hostname
+echo "127.0.0.1    localhost
+::1          localhost
+127.0.1.1    arch.localdomain    arch" | tee -a /etc/hosts
 
 # user
 passwd
