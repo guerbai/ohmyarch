@@ -48,10 +48,16 @@ suckless的软件及壁纸来自[DistroTube](https://gitlab.com/dwt1)
 
 ## 安装使用
 
-**前置依赖**
+**前置依赖**    
 
-- 带图形界面的Arch Linux发行版(建议选择[Manjaro XFCE](https://manjaro.org/download/))
-- 安装好git
+运行脚本前需要:
+- 安装好Arch Linux系统
+- 安装好git来获取此repo
+
+**发行版选择**    
+
+可以选择Arch-Based桌面发行版(建议选择[Manjaro XFCE](https://manjaro.org/download/))，或根据install.sh中的执行顺序使用UEFI启动方式安装原生Arch Linux    
+install.sh中分区、visudo等操作需要根据实际情况操作，有相应注释提示
 
 **运行脚本**
 
@@ -82,7 +88,8 @@ bash init.sh ohmyzsh
 
 **启动DWM**
 
-check命令无失败后，可重启电脑/注销用户，在登录界面选择Dwm
+Arch-Based发行版，可重启电脑/注销用户，在登录界面选择Dwm    
+原生Arch Linux在重启电脑后，输入`startx`
 
 ![](https://raw.githubusercontent.com/guerbai/scene/main/blog/20210928011638.png)
 
