@@ -13,6 +13,8 @@ install_dependency () {
         "unzip"
         "wget"
         "xwallpaper"
+	"highlight"
+	"ueberzug"
         "picom"
         "scrot"
 	"zsh"

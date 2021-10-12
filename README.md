@@ -95,6 +95,13 @@ Arch-Based发行版，可重启电脑/注销用户，在登录界面选择Dwm
 
 DWM基本生存指南见[DWM](https://gitlab.com/dwt1/dwm-distrotube)
 
+**neovim配置**
+不会自动配置neovim，可以手动执行，具体配置说明见[vim-ide-solution](https://github.com/guerbai/vim-ide-solution)
+
+```bash
+bash init.sh neovim
+```
+
 ## Arch Linux测试情况
 
 其实没有必要纠结具体是哪个桌面发行版，因为用了suckless这些软件后所有的发行版都长一个样🤣

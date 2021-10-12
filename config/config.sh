@@ -39,4 +39,11 @@ init_config() {
     else
         cat ~/ohmyarch/config/dwm-autostart | sudo tee -a /opt/dwm-distrotube-git/autostart.sh
     fi
+
+    # ranger
+    if check_dir_exist "ranger"; then
+        echo "${YELLOW}already has xinitrc configed, skip it${RESET}"
+    else
+	cp -r ~/ohmyarch/config/ranger ~/.config/ranger
+    fi
 }

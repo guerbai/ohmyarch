@@ -8,9 +8,11 @@ install_qv2ray() {
 	# echo "Already has qv2ray, skip install_qv2ray"
     # fi
 
-    cd ~/ohmyarch/static
-    chmod a+x ./Qv2ray-v2.7.0-linux-x64.AppImage
-    ./Qv2ray-v2.7.0-linux-x64.AppImage &
+    mkdir -p ~/Downloads
+    cp ~/ohmyarch/static/Qv2ray-v2.7.0-linux-x64.AppImage ~/Downloads/Qv2ray.AppImage
+    cd ~/Downloads
+    chmod a+x ./Qv2ray.AppImage
+    ./Qv2ray.AppImage &
 }
 
 install_v2ray_core() {

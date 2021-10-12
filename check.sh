@@ -29,6 +29,7 @@ CHECK_DIRS=(
     ["dwm"]="/opt/dwm-distrotube-git"
     ["dwmblocks"]="/opt/dwmblocks-distrotube-git"
     ["st"]="/opt/st-distrotube-git"
+    ["ranger"]="$HOME/.config/ranger"
 )
 
 function check_file_exist {
