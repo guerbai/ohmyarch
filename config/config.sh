@@ -46,11 +46,11 @@ init_config() {
     chsh -s $(which fish)
 
     # starship
-    if check_file_exist "starship-config"; then
-        echo "${YELLOW}already has starship configed, skip it${RESET}"
-    else
-	cp ~/ohmyarch/config/starship.toml ~/.config/starship.toml
-    fi
+    # if check_file_exist "starship-config"; then
+    #     echo "${YELLOW}already has starship configed, skip it${RESET}"
+    # else
+	# cp ~/ohmyarch/config/starship.toml ~/.config/starship.toml
+    # fi
 
     # zshrc
     # ZSHRC_CONTENT=$(cat ~/.zshrc)

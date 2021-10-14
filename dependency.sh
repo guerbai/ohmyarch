@@ -18,7 +18,7 @@ install_dependency () {
         "picom"
         "scrot"
 	"fish"
-	"starship"
+	# "starship"
         "pulseaudio"
         "ranger"
 	"yay"
