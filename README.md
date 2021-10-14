@@ -27,7 +27,7 @@
 | rg                      | 模糊搜索工具                   |
 | neovim                  | 代码编辑器                     |
 | autojump                | 快速目录跳转                   |
-| ohmyzsh                 | 华丽的zsh配置                  |
+| fish/starship           | shell环境                      |
 | zsh-autosuggestions     | zsh命令补全                    |
 | clipmenu                | 剪贴板历史                     |
 | neofetch                | 终端显示发行版与系统信息       |

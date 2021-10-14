@@ -55,12 +55,10 @@ else
     install_wallpaper
     install_suckless_distrotube
     install_v2ray
-    install_ohmyzsh
     install_autojump
     dispatch_scripts
     init_config
     check_all
 fi
 
-echo "${GREEN}You can change your default shell to zsh with 'chsh -s \$(which zsh)'
-Arch Linux Init Success, Have Fun :P${RESET}"
+echo "${GREEN}Arch Linux Init Success, Have Fun :P${RESET}"
