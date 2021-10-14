@@ -8,3 +8,6 @@ neofetch
 
 alias vim=nvim
 alias la='ls -a'
+
+export GOPATH=~/go
+export PATH=$PATH:$GOPATH/bin

@@ -27,7 +27,7 @@
 | rg                      | 模糊搜索工具                   |
 | neovim                  | 代码编辑器                     |
 | autojump                | 快速目录跳转                   |
-| ohmyzsh                 | 华丽的zsh配置                  |
+| fish/starship           | shell环境                      |
 | zsh-autosuggestions     | zsh命令补全                    |
 | clipmenu                | 剪贴板历史                     |
 | neofetch                | 终端显示发行版与系统信息       |
@@ -94,6 +94,13 @@ Arch-Based发行版，可重启电脑/注销用户，在登录界面选择Dwm
 ![](https://raw.githubusercontent.com/guerbai/scene/main/blog/20210928011638.png)
 
 DWM基本生存指南见[DWM](https://gitlab.com/dwt1/dwm-distrotube)
+
+**neovim配置**
+不会自动配置neovim，可以手动执行，具体配置说明见[vim-ide-solution](https://github.com/guerbai/vim-ide-solution)
+
+```bash
+bash init.sh neovim
+```
 
 ## Arch Linux测试情况
 

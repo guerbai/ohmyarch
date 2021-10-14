@@ -14,6 +14,10 @@ CHECK_FILES=(
     ["firefox"]="/usr/bin/firefox"
     ["locale_conf"]="/etc/locale.conf"
     ["xinitrc"]="$HOME/.xinitrc"
+    ["fish"]="/usr/bin/fish"
+    ["fish-config"]="$HOME/.config/fish/config.fish"
+    ["starship"]="/usr/bin/starship"
+    ["starship-config"]="$HOME/.config/starship.toml"
     # ["dmenu"]="/usr/local/bin/dmenu"
     # ["dwm"]="/usr/local/bin/dwm"
     # ["dwmblocks"]="/usr/bin/dwmblocks"
@@ -29,6 +33,7 @@ CHECK_DIRS=(
     ["dwm"]="/opt/dwm-distrotube-git"
     ["dwmblocks"]="/opt/dwmblocks-distrotube-git"
     ["st"]="/opt/st-distrotube-git"
+    ["ranger"]="$HOME/.config/ranger"
 )
 
 function check_file_exist {

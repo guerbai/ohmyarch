@@ -31,6 +31,7 @@ DIR=$(pwd)
 . "$DIR/common/v2ray.sh"
 . "$DIR/common/autojump.sh"
 . "$DIR/common/ohmyzsh.sh"
+. "$DIR/common/neovim.sh"
 . "$DIR/config/config.sh"
 . "$DIR/check.sh"
 
@@ -46,18 +47,18 @@ elif [[ $1 == "ohmyzsh" ]]; then
     install_ohmyzsh
 elif [[ $1 == "autojump" ]]; then
     install_autojump
+elif [[ $1 == "neovim" ]]; then
+    init_neovim
 else
     config_arch_cn
     install_dependency
     install_wallpaper
     install_suckless_distrotube
     install_v2ray
-    install_ohmyzsh
     install_autojump
     dispatch_scripts
     init_config
     check_all
 fi
 
-echo "${GREEN}You can change your default shell to zsh with 'chsh -s \$(which zsh)'
-Arch Linux Init Success, Have Fun :P${RESET}"
+echo "${GREEN}Arch Linux Init Success, Have Fun :P${RESET}"
