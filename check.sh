@@ -3,7 +3,7 @@ CHECK_FILES=(
     ["yay"]="/usr/bin/yay"
     ["picom"]="/usr/bin/picom"
     ["picom-config"]="$HOME/.config/picom/picom.conf"
-    ["ohmyzsh"]="$HOME/.oh-my-zsh/oh-my-zsh.sh"
+    # ["ohmyzsh"]="$HOME/.oh-my-zsh/oh-my-zsh.sh"
     ["fcitx"]="/usr/bin/fcitx"
     ["fcitx-configtool"]="/usr/bin/fcitx-configtool"
     ["autojump"]="$HOME/.autojump/etc/profile.d/autojump.sh"
@@ -28,7 +28,7 @@ declare -A CHECK_DIRS
 CHECK_DIRS=(
     ["v2ray-core"]="$HOME/.config/qv2ray/vcore"
     ["wallpapers"]="$HOME/Pictures/wallpapers"
-    ["zsh-autosuggestions"]="$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
+    # ["zsh-autosuggestions"]="$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
     ["dmenu"]="/opt/dmenu-distrotube-git"
     ["dwm"]="/opt/dwm-distrotube-git"
     ["dwmblocks"]="/opt/dwmblocks-distrotube-git"
