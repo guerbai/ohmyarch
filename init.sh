@@ -55,6 +55,7 @@ else
     install_wallpaper
     install_suckless_distrotube
     install_v2ray
+    install_ohmyzsh
     install_autojump
     dispatch_scripts
     init_config

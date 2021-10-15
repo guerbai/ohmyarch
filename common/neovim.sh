@@ -9,3 +9,4 @@ init_neovim() {
     go get golang.org/x/tools/gopls@latest
     python3 -m pip install --user --upgrade pynvim
 }
+

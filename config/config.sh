@@ -32,32 +32,19 @@ init_config() {
         cat ~/ohmyarch/config/dwm-autostart | sudo tee -a /opt/dwm-distrotube-git/autostart.sh
     fi
 
+    # zshrc
+    ZSHRC_CONTENT=$(cat ~/.zshrc)
+    if [[ $ZSHRC_CONTENT == *"neofetch"* ]]; then
+        echo "${YELLOW}already has .zshrc configed, skip it${RESET}"
+    else
+        cat ~/ohmyarch/config/zshrc | tee -a ~/.zshrc
+    fi
+
     # ranger
     if check_dir_exist "ranger"; then
-        echo "${YELLOW}already has xinitrc configed, skip it${RESET}"
+        echo "${YELLOW}already has ranger configed, skip it${RESET}"
     else
 	cp -r ~/ohmyarch/config/ranger ~/.config/ranger
     fi
-
-    # fish
-    mkdir -p ~/.config/fish
-    mv ~/.config/fish/config.fish ~/.config/fish/config.fish.bak
-    cp ~/ohmyarch/config/fish/config.fish ~/.config/fish/config.fish
-    chsh -s $(which fish)
-
-    # starship
-    if check_file_exist "starship-config"; then
-        echo "${YELLOW}already has starship configed, skip it${RESET}"
-    else
-	cp ~/ohmyarch/config/starship.toml ~/.config/starship.toml
-    fi
-
-    # zshrc
-    # ZSHRC_CONTENT=$(cat ~/.zshrc)
-    # if [[ $ZSHRC_CONTENT == *"neofetch"* ]]; then
-    #     echo "${YELLOW}already has .zshrc configed, skip it${RESET}"
-    # else
-    #     cat ~/ohmyarch/config/zshrc | tee -a ~/.zshrc
-    # fi
 
 }
