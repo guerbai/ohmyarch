@@ -17,8 +17,9 @@ install_dependency () {
 	"ueberzug"
         "picom"
         "scrot"
-	"fish"
-	"starship"
+	"zsh"
+	# "fish"
+	# "starship"
         "pulseaudio"
         "ranger"
 	"yay"
@@ -49,7 +50,7 @@ install_dependency () {
     echo "${GREEN}yay install ripgrep success${RESET}"
     yes | yay -S neovim
     echo "${GREEN}yay install neovim success${RESET}"
-    yay -S --answerclean I --answerdiff N fcitx-sogoupinyin
+    yes | yay -S --answerclean I --answerdiff N fcitx-sogoupinyin
     echo "${GREEN}yay install fcitx-sogoupinyin success${RESET}"
     yes | yay -S typora
     echo "${GREEN}yay install typora success${RESET}"
