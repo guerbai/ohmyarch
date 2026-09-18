@@ -35,6 +35,7 @@
 | tldr                    | 快捷命令行工具使用提示         |
 | glances                 | 查看系统运行情况               |
 | typora                  | markdown编辑器                 |
+| Qv2ray/v2ray-core       | 网络代理客户端与核心           |
 
 suckless的软件及壁纸来自[DistroTube](https://gitlab.com/dwt1)
 
